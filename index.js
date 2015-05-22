@@ -83,6 +83,8 @@ module.exports = function (source) {
       return callback(err);
     }
 
+    this.addDependency(this.resourcePath);
+
     compileResource.call(this, this.resourcePath, config, function (err, source) {
       if (err) {
         return callback(err);
