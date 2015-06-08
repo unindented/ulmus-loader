@@ -1,7 +1,7 @@
 {
   "name":        "ulmus-loader",
   "description": "Elm loader for Webpack.",
-  "version":     "0.0.2",
+  "version":     "0.0.3",
 
   "author": {
     "name":  "Daniel Perez Alvarez",
