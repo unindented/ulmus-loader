@@ -26,10 +26,15 @@
 
   "dependencies": {
     "loader-utils":      "^0.2.5",
-    "node-elm-compiler": "^0.4.0"
+    "node-elm-compiler": "^1.0.1"
+  },
+
+  "peerDependencies": {
+    "elm": "^2.0"
   },
 
   "devDependencies": {
+    "elm":      "^2.0",
     "nodeunit": "^0.9"
   }
 }
