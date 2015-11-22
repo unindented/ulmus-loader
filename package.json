@@ -1,40 +1,33 @@
 {
-  "name":        "ulmus-loader",
+  "name": "ulmus-loader",
   "description": "Elm loader for Webpack.",
-  "version":     "0.2.0",
-
+  "version": "0.2.0",
   "author": {
-    "name":  "Daniel Perez Alvarez",
+    "name": "Daniel Perez Alvarez",
     "email": "unindented@gmail.com",
-    "url":   "http://unindented.org/"
+    "url": "http://unindented.org/"
   },
-
   "repository": {
     "type": "git",
-    "url":  "https://github.com/unindented/ulmus-loader"
+    "url": "https://github.com/unindented/ulmus-loader"
   },
-
   "keywords": [
     "elm",
     "ulmus",
     "webpack"
   ],
-
   "scripts": {
     "test": "./node_modules/.bin/nodeunit test/loader.js"
   },
-
   "dependencies": {
-    "loader-utils":      "^0.2.5",
-    "node-elm-compiler": "^1.0.1"
+    "loader-utils": "^0.2.5",
+    "node-elm-compiler": "^2.0.0"
   },
-
   "peerDependencies": {
     "elm": "^2.0"
   },
-
   "devDependencies": {
-    "elm":      "^2.0",
+    "elm": "^2.0",
     "nodeunit": "^0.9"
   }
 }
