@@ -3,6 +3,8 @@
 var fs      = require('fs');
 var utils   = require('loader-utils');
 var compile = require('node-elm-compiler').compile;
+var path    = require('path');
+var glob    = require('glob');
 
 var extend = function (obj) {
   var source, prop, i, l;
@@ -52,8 +54,17 @@ var loadConfig = function (source, callback) {
   callback(null, config);
 };
 
+var addDependencies = function (basePath, addDependency) {
+  glob(basePath + "/**/*.elm", function (err, files) {
+    for (var i = 0; i < files.length; i++) {
+      addDependency(files[i]);
+    }
+  });
+}
+
 var compileResource = function (resource, config, callback) {
   try {
+    addDependencies(path.dirname(resource), this.addDependency);
     compile(resource, config).on('close', function (exitCode) {
       if (exitCode === 0) {
         fs.readFile(config.output, 'utf8', callback);
