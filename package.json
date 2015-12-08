@@ -22,7 +22,7 @@
   "dependencies": {
     "glob": "^6.0.1",
     "loader-utils": "^0.2.5",
-    "node-elm-compiler": "^2.0.0"
+    "node-elm-compiler": "^2.3.0"
   },
   "peerDependencies": {
     "elm": "^2.0"
