@@ -1,6 +1,8 @@
-# Elm loader for webpack [![Version](https://img.shields.io/npm/v/ulmus-loader.svg)](https://www.npmjs.com/package/ulmus-loader) [![Build Status](https://img.shields.io/travis/unindented/ulmus-loader.svg)](http://travis-ci.org/unindented/ulmus-loader) [![Dependency Status](https://img.shields.io/gemnasium/unindented/ulmus-loader.svg)](https://gemnasium.com/unindented/ulmus-loader)
+# Elm loader for webpack [![Version](https://img.shields.io/npm/v/ulmus-loader.svg)](https://www.npmjs.com/package/ulmus-loader) [![Build Status](https://img.shields.io/travis/unindented/ulmus-loader.svg)](http://travis-ci.org/unindented/ulmus-loader) [![Dependency Status](https://img.shields.io/gemnasium/unindented/ulmus-loader.svg)](https://gemnasium.com/unindented/ulmus-loader) ![Abandoned](https://img.shields.io/badge/status-abandoned-red.svg)
 
 Compile Elm files using the awesome [node-elm-compiler](https://github.com/rtfeldman/node-elm-compiler).
+
+**Note**: This project has been superseded by [`elm-webpack-loader`](https://github.com/rtfeldman/elm-webpack-loader).
 
 
 ## Installation
